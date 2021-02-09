@@ -1,0 +1,24 @@
+{
+  "name": "website-starter-with-sass",
+  "version": "1.0.0",
+  "description": "A boilerplate for sass based projects.",
+  "main": "index.js",
+  "scripts": {
+    "watch": "sass --watch sass:dist/css",
+    "compile": "sass --style=compressed sass:dist/css"
+  },
+  "keywords": [
+    "starter",
+    "boilerplate",
+    "scss",
+    "sass",
+    "css",
+    "website"
+  ],
+  "homepage": "https://github.com/rayeful",
+  "author": "Raymond <contact@raimond.design> (http://raimond.design)",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.32.6"
+  }
+}

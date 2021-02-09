@@ -1,0 +1,15 @@
+// Set the base font to defaults
+
+html {
+    font-size: 62.5%; // Set the font size default to 10px to define 1rem = 10px to make it easier to work with rem's and em's.
+
+    &:focus-within {
+        scroll-behavior: smooth;
+    }
+}
+
+body {
+    font-family: var(--ff-default);
+    font-size: var(--fs-default, 1.6rem);
+    line-height: 1.5;
+}

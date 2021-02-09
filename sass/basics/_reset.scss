@@ -1,0 +1,48 @@
+/* Minimal CSS Reset */
+
+// Remove default margins and set the box sizing to border-box
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// Set the all media elements as a display block to make it easier to use it
+
+img,
+svg,
+picture,
+canvas,
+video,
+audio,
+embed,
+object,
+iframe {
+    display: block;
+    max-width: 100%;
+}
+
+// Inherit the website font family for inputs, buttons and select
+
+input,
+textarea,
+button,
+select {
+    font-family: inherit;
+}
+
+// Remove all animations, transitions and smooth scrolling for users who prefers reduced motion 
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
