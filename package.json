@@ -1,14 +1,14 @@
 {
   "name": "website-starter-with-sass",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "A boilerplate for sass based projects.",
   "main": "dist/index.html",
   "scripts": {
     "copy:html": "copyfiles -u 1 src/*.html dist",
     "copy:scripts": "copyfiles -u 1 src/scripts/*.js dist",
-    "watch:sass": "sass --watch src/sass:dist/css",
     "watch:html": "onchange \"src/*.html\" -- npm run copy:html",
     "watch:scripts": "onchange \"src/scripts/*.js\" -- npm run copy:scripts",
+    "watch:sass": "sass --watch src/sass:dist/css",
     "compile": "sass --style=compressed src/sass:dist/css",
     "server": "browser-sync start --server dist --files dist",
     "start": "npm-run-all copy:* --parallel watch:* server",
