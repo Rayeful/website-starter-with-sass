@@ -1,0 +1,63 @@
+/* Minimal CSS Reset */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img,
+svg,
+picture,
+canvas,
+video,
+audio,
+embed,
+object,
+iframe {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+textarea,
+button,
+select {
+  font-family: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+*::before,
+*::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+/* Typography styling */
+/* Base styling */
+html {
+  font-size: 62.5%;
+}
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--ff-default);
+  font-size: var(--fs-default, 1.6rem);
+  line-height: 1.5;
+}
+
+h1, h2, h3, h4 {
+  line-height: 1.1;
+}
+
+p {
+  max-width: 75ch;
+}
+
+/*# sourceMappingURL=main.css.map */

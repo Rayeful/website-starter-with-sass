@@ -1,11 +1,17 @@
 {
   "name": "website-starter-with-sass",
-  "version": "1.0.0",
+  "version": "0.2.0",
   "description": "A boilerplate for sass based projects.",
-  "main": "index.js",
+  "main": "dist/index.html",
   "scripts": {
-    "watch": "sass --watch sass:dist/css",
-    "compile": "sass --style=compressed sass:dist/css"
+    "copy:html": "copyfiles -u 1 src/*.html dist",
+    "copy:scripts": "copyfiles -u 1 src/scripts/*.js dist",
+    "watch:sass": "sass --watch src/sass:dist/css",
+    "watch:html": "onchange \"src/*.html\" -- npm run copy:html",
+    "watch:scripts": "onchange \"src/scripts/*.js\" -- npm run copy:scripts",
+    "compile": "sass --style=compressed src/sass:dist/css",
+    "start": "npm-run-all --parallel watch:*",
+    "build": "npm-run-all copy:* && npm run compile"
   },
   "keywords": [
     "starter",
@@ -19,6 +25,9 @@
   "author": "Raymond <contact@raimond.design> (http://raimond.design)",
   "license": "ISC",
   "devDependencies": {
+    "copyfiles": "^2.4.1",
+    "npm-run-all": "^4.1.5",
+    "onchange": "^7.1.0",
     "sass": "^1.32.6"
   }
 }
