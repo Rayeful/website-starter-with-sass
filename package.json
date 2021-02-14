@@ -10,7 +10,8 @@
     "watch:html": "onchange \"src/*.html\" -- npm run copy:html",
     "watch:scripts": "onchange \"src/scripts/*.js\" -- npm run copy:scripts",
     "compile": "sass --style=compressed src/sass:dist/css",
-    "start": "npm-run-all --parallel watch:*",
+    "server": "browser-sync start --server dist --files dist",
+    "start": "npm-run-all copy:* --parallel watch:* server",
     "build": "npm-run-all copy:* && npm run compile"
   },
   "keywords": [
@@ -25,6 +26,7 @@
   "author": "Raymond <contact@raimond.design> (http://raimond.design)",
   "license": "ISC",
   "devDependencies": {
+    "browser-sync": "^2.26.14",
     "copyfiles": "^2.4.1",
     "npm-run-all": "^4.1.5",
     "onchange": "^7.1.0",
