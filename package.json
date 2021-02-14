@@ -20,7 +20,8 @@
     "scss",
     "sass",
     "css",
-    "website"
+    "website",
+    "browser-sync"
   ],
   "homepage": "https://github.com/Rayeful/website-starter-with-sass",
   "author": "Raymond <contact@raimond.design> (http://raimond.design)",
