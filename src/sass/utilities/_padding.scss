@@ -8,6 +8,10 @@
     padding-block-end: var(--padding-block-end);
 }
 
+.pb {
+    padding-block: var(--padding-block);
+}
+
 .pis {
     padding-inline-start: var(--padding-inline-start);
 }
@@ -16,6 +20,10 @@
     padding-inline-end: var(--padding-inline-end);
 }
 
+.pi {
+    padding-inline: var(--padding-inline);
+}
+
 .responsive_padding {
-    padding: var(--padding-block, 2.4rem) clamp(var(--padding-inline-min, 1rem), 5%, var(--padding-inlin-max, 3rem));
+    padding: var(--padding-block, 2.4rem) clamp(var(--padding-inline-min, 1rem), 5%, var(--padding-inline-max, 3rem));
 }
