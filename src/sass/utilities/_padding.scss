@@ -1,0 +1,21 @@
+// Utilities classes for paddings using logical property
+
+.pbs {
+    padding-block-start: var(--padding-block-start);
+}
+
+.pbe {
+    padding-block-end: var(--padding-block-end);
+}
+
+.pis {
+    padding-inline-start: var(--padding-inline-start);
+}
+
+.pie {
+    padding-inline-end: var(--padding-inline-end);
+}
+
+.responsive_padding {
+    padding: var(--padding-block, 2.4rem) clamp(var(--padding-inline-min, 1rem), 5%, var(--padding-inlin-max, 3rem));
+}

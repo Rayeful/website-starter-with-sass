@@ -1,0 +1,9 @@
+// Utility class for fluid type text
+
+.fluid-type {
+    font-size: clamp(
+        var(--fluid-fs-min, 2rem),
+        calc(1rem + var(--fluid-fs-ideal, 5vw)),
+        var(--fluid-fs-max, 5rem)
+    );
+}

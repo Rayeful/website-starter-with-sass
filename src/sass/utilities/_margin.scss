@@ -1,0 +1,19 @@
+// Utilities classes for margins using logical property
+
+.mbs { 
+    margin-block-start: var(--margin-block-start);
+}
+
+.mbe { 
+    margin-block-end: var(--margin-block-end);
+}
+
+.mis { 
+    margin-inline-start: var(--margin-inline-start);
+}
+
+.mie { 
+    margin-inline-end: var(--margin-inline-end);
+}
+
+
